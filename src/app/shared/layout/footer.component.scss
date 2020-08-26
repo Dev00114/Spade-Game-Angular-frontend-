@@ -1,0 +1,137 @@
+.jss2 {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+.jss1 {
+  display: flex;
+  overflow: scroll;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.MuiContainer-maxWidthSm {
+  max-width: 600px;
+}
+
+.MuiContainer-root {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.MuiContainer-root {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about {
+  z-index: 1;
+  flex-direction: column;
+  display: flex !important;
+  height: 100%;
+  align-items: flex-start;
+  padding-top: 10%;
+}
+
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.MuiTypography-root {
+  margin: 0;
+}
+
+h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.feedback {
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+}
+
+.about .feedback a,
+.about .feedback iframe {
+  margin: 0 1rem;
+}
+
+.MuiLink-underlineHover {
+  text-decoration: none;
+}
+
+.MuiTypography-colorPrimary {
+  color: #32a86f;
+}
+
+.hover {
+  font-size: smaller;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: inline-block;
+  /* min-width: 70%; */
+}
+
+.hover {
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+}
+.hover:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+.height-adjust{
+  margin-top: 100px;
+  text-align: -webkit-center;
+}
+@media only screen and (max-width: 380px) {
+  .height-adjust .last {
+    margin-left: 18%;
+  }
+}
+
+.Partron{
+    background-color: #00d7c3;
+    border-color: #00d7c3;
+    color: white;
+}
+
+.patron_text{
+  background-color: #424032;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: rgba(255,255,255,0.5) 0px 3px 3px;
+}

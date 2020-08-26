@@ -1,0 +1,364 @@
+<div class="jss1">
+  <div [ngClass]="{'publishing': publishing}" #publisherDiv></div>
+  <div class="jss2" id="first-field">
+    <div class="MuiContainer-root hero MuiContainer-maxWidthSm">
+      <img src="../../assets/image/ace-of-spades-5188736_1280.png" alt="POKER IN PLACE" id="logo-image">
+      <div>
+        <div class="wrapper">
+          <h1>SPADES GAME</h1>
+        </div>
+        <h4 id="ui"></h4>
+        <h6 class="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit" style="margin:1rem 0px;color:white">
+          Play spade while safely social distancing and catching up with your friends. Optimized for large screens or
+          tablets.
+        </h6>
+        <a href="" routerLink="/login" tabindex="0" aria-disabled="false" style="margin:1rem 0px" id="pocker-start-btn"
+          class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-containedSizeLarge MuiButton-sizeLarge btn btn-primary">
+          <span *appShowAuthed="false" class="MuiButton-label glow-on-hover">Get Started</span>
+          <span *appShowAuthed="true" class="MuiButton-label glow-on-hover" (click)="create_game_info()">Create New Game</span>
+          <span class="MuiTouchRipple-root"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="jss2">
+    <div class="row">
+      <div class="jss21"
+        style="background-color: #eeeeee; color: rgb(68, 68, 68); justify-content: center; align-items: center;">
+        <div style="width: 100%;height:100%">
+          <div style="width: 100%;height:100%;">
+            <video class="video_control" autoplay
+              src="https://codemyui.com/wp-content/uploads/2019/09/fitgoal_dribbble_final_cut_jt01-dribbble-1.mov"></video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="jss2" id="spade-table">
+    <div class="jss21">
+      <div class="tableContainer">
+        <div class="tableContainer">
+          <div class="table">
+            <div class="circle_cards">
+              <div class="player1_card playcard"></div>
+              <div class="player2_card playcard">
+                <img src="../../assets/cards/10_of_spades.png" alt="" class="cover_card2">
+              </div>
+              <div class="player3_card playcard">
+                <img src="../../assets/cards/jack_of_spades.png" alt="" class="cover_card3">
+              </div>
+              <div class="player4_card playcard"></div>
+            </div>
+            <div class="player1">
+              <div class="container">
+                <div class="box">
+                  <div class="row full-content">
+                    <div class="col-md-6">
+                      <div class="user-avatar-self">
+                        <div [ngClass]="{'publishing': publishing}" #publishersDiv></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 style="text-align: center;margin-top: 3vh;">Nikola</h5>
+                      <p style="text-align: center;">$30.24</p>
+                    </div>
+                  </div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player2">
+              <div class="container">
+                <div class="box">
+                  <div class="row full-content">
+                    <div class="col-md-12" style="height: 15vh;">
+                      <div class="user-avatar"></div>
+                    </div>
+                    <div class="col-md-12">
+                      <h5 style="text-align:center;margin-top: 3vh;">Sylvia</h5>
+                      <p style="text-align: center;">$ 12.40</p>
+                    </div>
+                  </div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player3">
+              <div class="container">
+                <div class="box">
+                  <div class="row full-content">
+                    <div class="col-md-12" style="height: 15vh;">
+                      <div class="user-avatar2"></div>
+                    </div>
+                    <div class="col-md-12">
+                      <h5 style="text-align:center;margin-top: 3vh;">Olivia</h5>
+                      <p style="text-align: center;">$ 12.40</p>
+                    </div>
+                  </div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="player4">
+              <div class="container">
+                <div class="box">
+                  <div class="row full-content">
+                    <div class="col-md-6">
+                      <div class="user-avatar1"></div>
+                    </div>
+                    <div class="col-md-6">
+                      <h5 style="text-align:center;margin-top: 3vh;">Anna</h5>
+                      <p style="text-align: center;">$30.24</p>
+                    </div>
+                  </div>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <div class="content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="myModal" class="modal">
+  <div class="boxs">
+    <a class="closes" (click) = "cancel()">&times;</a>
+    <h1>Create New Game</h1>
+    <hr />
+    <div id="cash" class=" tab_content">
+      <hr />
+      <select name="" class="optionval" id="select_option">
+        <option value="1200">Up to 4 players, 20min(Free)</option>
+        <option value="3600">Up to 4 players, 60min($3)</option>
+        <option value="7200">Up to 4 players, 120min($5)</option>
+        <option value="10800">Up to 4 players, 180min($8)</option>
+      </select>
+      <hr />
+      <h2>Email Invites</h2>
+      <hr />
+      <div class="flexlayout">
+        <div style="width: 40%;display: flex;"><h6>Teammate&nbsp;&nbsp;(player 3)</h6></div>
+        <div style="width: 40%;"><input id="teamate" class="flex_input" type="email" (focus) = "focus()" (focusout) = "onefocusout()" /></div>
+        <app-teamate></app-teamate>
+      </div>
+      <hr />
+      <div class="flexlayout">
+        <div style="width: 40%;display: flex;"><h6>Opponent&nbsp;&nbsp;(player 2)</h6></div>
+        <div style="width: 50%;"><input id="opponent" class="flex_input" type="email" (focus) = "focusout()" (focusout) = "twofocusout()" /></div>
+      </div>
+      <hr />
+      <div class="flexlayout">
+        <div style="width: 40%;display: flex;"><h6>Opponent Teammate&nbsp;&nbsp;(player 4)</h6></div>
+        <div style="width: 50%;"><input id="opponentTeamate" class="flex_input" type="email" (focus) = "focusout()" (focusout) = "threefocusout()" /></div>
+      </div>
+      <hr />
+      <!-- <p class="email_input">Email invites (type email then hit enter). You can add more later...</p>
+      <input type="text" id="essai" placeholder="Email" class="full"> -->
+      <div id="buy_blindg">
+        <p>Start Time (you can start sooner)</p>
+        <p>Time zone</p>
+      </div>
+      <div id="buy_blind">
+        <input type="datetime-local" id="datalocaltimes" class="full" defaultValue = "new Date()"/>
+        <select class="full selectedval" id="select_timezone" style="margin-top: 4px;">
+          <option timeZoneId="1" gmtAdjustment="GMT-12:00" useDaylightTime="0" value="-12">(GMT-12:00) International
+            Date Line
+            West</option>
+          <option timeZoneId="2" gmtAdjustment="GMT-11:00" useDaylightTime="0" value="-11">(GMT-11:00) Midway Island,
+            Samoa
+          </option>
+          <option timeZoneId="3" gmtAdjustment="GMT-10:00" useDaylightTime="0" value="-10">(GMT-10:00) Hawaii</option>
+          <option timeZoneId="4" gmtAdjustment="GMT-09:00" useDaylightTime="1" value="-9">(GMT-09:00) Alaska</option>
+          <option timeZoneId="5" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Pacific Time (US &
+            Canada)
+          </option>
+          <option timeZoneId="6" gmtAdjustment="GMT-08:00" useDaylightTime="1" value="-8">(GMT-08:00) Tijuana, Baja
+            California
+          </option>
+          <option timeZoneId="7" gmtAdjustment="GMT-07:00" useDaylightTime="0" value="-7">(GMT-07:00) Arizona</option>
+          <option timeZoneId="8" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Chihuahua, La Paz,
+            Mazatlan</option>
+          <option timeZoneId="9" gmtAdjustment="GMT-07:00" useDaylightTime="1" value="-7">(GMT-07:00) Mountain Time (US
+            &
+            Canada)</option>
+          <option timeZoneId="10" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Central America
+          </option>
+          <option timeZoneId="11" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Central Time (US
+            &
+            Canada)</option>
+          <option timeZoneId="12" gmtAdjustment="GMT-06:00" useDaylightTime="1" value="-6">(GMT-06:00) Guadalajara,
+            Mexico City,
+            Monterrey</option>
+          <option timeZoneId="13" gmtAdjustment="GMT-06:00" useDaylightTime="0" value="-6">(GMT-06:00) Saskatchewan
+          </option>
+          <option timeZoneId="15" gmtAdjustment="GMT-05:00" useDaylightTime="1" value="-5">(GMT-05:00) Eastern Time (US
+            &
+            Canada)</option>
+          <option timeZoneId="17" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Atlantic Time
+            (Canada)
+          </option>
+          <option timeZoneId="18" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Caracas, La Paz
+          </option>
+          <option timeZoneId="19" gmtAdjustment="GMT-04:00" useDaylightTime="0" value="-4">(GMT-04:00) Manaus</option>
+          <option timeZoneId="20" gmtAdjustment="GMT-04:00" useDaylightTime="1" value="-4">(GMT-04:00) Santiago</option>
+          <option timeZoneId="21" gmtAdjustment="GMT-03:30" useDaylightTime="1" value="-3.5">(GMT-03:30) Newfoundland
+          </option>
+          <option timeZoneId="22" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Brasilia</option>
+          <option timeZoneId="23" gmtAdjustment="GMT-03:00" useDaylightTime="0" value="-3">(GMT-03:00) Buenos Aires,
+            Georgetown
+          </option>
+          <option timeZoneId="24" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Greenland
+          </option>
+          <option timeZoneId="25" gmtAdjustment="GMT-03:00" useDaylightTime="1" value="-3">(GMT-03:00) Montevideo
+          </option>
+          <option timeZoneId="26" gmtAdjustment="GMT-02:00" useDaylightTime="1" value="-2">(GMT-02:00) Mid-Atlantic
+          </option>
+          <option timeZoneId="27" gmtAdjustment="GMT-01:00" useDaylightTime="0" value="-1">(GMT-01:00) Cape Verde Is.
+          </option>
+          <option timeZoneId="28" gmtAdjustment="GMT-01:00" useDaylightTime="1" value="-1">(GMT-01:00) Azores</option>
+          <option timeZoneId="29" gmtAdjustment="GMT+00:00" useDaylightTime="0" value="0">(GMT+00:00) Casablanca,
+            Monrovia,
+            Reykjavik</option>
+          <option timeZoneId="30" gmtAdjustment="GMT+00:00" useDaylightTime="1" value="0">(GMT+00:00) Greenwich Mean
+            Time :
+            Dublin, Edinburgh, Lisbon, London</option>
+          <option timeZoneId="31" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Amsterdam, Berlin,
+            Bern,
+            Rome, Stockholm, Vienna</option>
+          <option timeZoneId="32" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Belgrade,
+            Bratislava,
+            Budapest, Ljubljana, Prague</option>
+          <option timeZoneId="33" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Brussels,
+            Copenhagen,
+            Madrid, Paris</option>
+          <option timeZoneId="34" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) Sarajevo, Skopje,
+            Warsaw,
+            Zagreb</option>
+          <option timeZoneId="35" gmtAdjustment="GMT+01:00" useDaylightTime="1" value="1">(GMT+01:00) West Central
+            Africa
+          </option>
+          <option timeZoneId="36" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Amman</option>
+          <option timeZoneId="37" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Athens, Bucharest,
+            Istanbul</option>
+          <option timeZoneId="38" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Beirut</option>
+          <option timeZoneId="39" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Cairo</option>
+          <option timeZoneId="40" gmtAdjustment="GMT+02:00" useDaylightTime="0" value="2">(GMT+02:00) Harare, Pretoria
+          </option>
+          <option timeZoneId="41" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Helsinki, Kyiv,
+            Riga,
+            Sofia, Tallinn, Vilnius</option>
+          <option timeZoneId="42" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Jerusalem</option>
+          <option timeZoneId="43" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Minsk</option>
+          <option timeZoneId="44" gmtAdjustment="GMT+02:00" useDaylightTime="1" value="2">(GMT+02:00) Windhoek</option>
+          <option timeZoneId="45" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Kuwait, Riyadh,
+            Baghdad
+          </option>
+          <option timeZoneId="46" gmtAdjustment="GMT+03:00" useDaylightTime="1" value="3">(GMT+03:00) Moscow, St.
+            Petersburg,
+            Volgograd</option>
+          <option timeZoneId="47" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Nairobi</option>
+          <option timeZoneId="48" gmtAdjustment="GMT+03:00" useDaylightTime="0" value="3">(GMT+03:00) Tbilisi</option>
+          <option timeZoneId="49" gmtAdjustment="GMT+03:30" useDaylightTime="1" value="3.5">(GMT+03:30) Tehran</option>
+          <option timeZoneId="50" gmtAdjustment="GMT+04:00" useDaylightTime="0" value="4">(GMT+04:00) Abu Dhabi, Muscat
+          </option>
+          <option timeZoneId="51" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Baku</option>
+          <option timeZoneId="52" gmtAdjustment="GMT+04:00" useDaylightTime="1" value="4">(GMT+04:00) Yerevan</option>
+          <option timeZoneId="53" gmtAdjustment="GMT+04:30" useDaylightTime="0" value="4.5">(GMT+04:30) Kabul</option>
+          <option timeZoneId="54" gmtAdjustment="GMT+05:00" useDaylightTime="1" value="5">(GMT+05:00) Yekaterinburg
+          </option>
+          <option timeZoneId="55" gmtAdjustment="GMT+05:00" useDaylightTime="0" value="5">(GMT+05:00) Islamabad,
+            Karachi,
+            Tashkent</option>
+          <option timeZoneId="56" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Sri
+            Jayawardenapura
+          </option>
+          <option timeZoneId="57" gmtAdjustment="GMT+05:30" useDaylightTime="0" value="5.5">(GMT+05:30) Chennai,
+            Kolkata,
+            Mumbai, New Delhi</option>
+          <option timeZoneId="58" gmtAdjustment="GMT+05:45" useDaylightTime="0" value="5.75">(GMT+05:45) Kathmandu
+          </option>
+          <option timeZoneId="59" gmtAdjustment="GMT+06:00" useDaylightTime="1" value="6">(GMT+06:00) Almaty,
+            Novosibirsk
+          </option>
+          <option timeZoneId="60" gmtAdjustment="GMT+06:00" useDaylightTime="0" value="6">(GMT+06:00) Astana, Dhaka
+          </option>
+          <option timeZoneId="61" gmtAdjustment="GMT+06:30" useDaylightTime="0" value="6.5">(GMT+06:30) Yangon (Rangoon)
+          </option>
+          <option timeZoneId="62" gmtAdjustment="GMT+07:00" useDaylightTime="0" value="7">(GMT+07:00) Bangkok, Hanoi,
+            Jakarta
+          </option>
+          <option timeZoneId="63" gmtAdjustment="GMT+07:00" useDaylightTime="1" value="7">(GMT+07:00) Krasnoyarsk
+          </option>
+          <option timeZoneId="64" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Beijing,
+            Chongqing, Hong
+            Kong, Urumqi</option>
+          <option timeZoneId="65" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Kuala Lumpur,
+            Singapore
+          </option>
+          <option timeZoneId="66" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Irkutsk, Ulaan
+            Bataar
+          </option>
+          <option timeZoneId="67" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Perth</option>
+          <option timeZoneId="68" gmtAdjustment="GMT+08:00" useDaylightTime="0" value="8">(GMT+08:00) Taipei</option>
+          <option timeZoneId="69" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Osaka, Sapporo,
+            Tokyo
+          </option>
+          <option timeZoneId="70" gmtAdjustment="GMT+09:00" useDaylightTime="0" value="9">(GMT+09:00) Seoul</option>
+          <option timeZoneId="71" gmtAdjustment="GMT+09:00" useDaylightTime="1" value="9">(GMT+09:00) Yakutsk</option>
+          <option timeZoneId="72" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Adelaide
+          </option>
+          <option timeZoneId="73" gmtAdjustment="GMT+09:30" useDaylightTime="0" value="9.5">(GMT+09:30) Darwin</option>
+          <option timeZoneId="74" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Brisbane</option>
+          <option timeZoneId="75" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Canberra,
+            Melbourne,
+            Sydney</option>
+          <option timeZoneId="76" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Hobart</option>
+          <option timeZoneId="77" gmtAdjustment="GMT+10:00" useDaylightTime="0" value="10">(GMT+10:00) Guam, Port
+            Moresby
+          </option>
+          <option timeZoneId="78" gmtAdjustment="GMT+10:00" useDaylightTime="1" value="10">(GMT+10:00) Vladivostok
+          </option>
+          <option timeZoneId="79" gmtAdjustment="GMT+11:00" useDaylightTime="1" value="11">(GMT+11:00) Magadan, Solomon
+            Is., New
+            Caledonia</option>
+          <option timeZoneId="80" gmtAdjustment="GMT+12:00" useDaylightTime="1" value="12">(GMT+12:00) Auckland,
+            Wellington
+          </option>
+          <option timeZoneId="81" gmtAdjustment="GMT+12:00" useDaylightTime="0" value="12">(GMT+12:00) Fiji, Kamchatka,
+            Marshall
+            Is.</option>
+          <option timeZoneId="82" gmtAdjustment="GMT+13:00" useDaylightTime="0" value="13">(GMT+13:00) Nuku'alofa
+          </option>
+        </select>
+      </div>
+      <div class="button-holder"><a class="button outline" (click)="go_to_page()">CREATE<span
+            class="lines"></span></a></div>
+    </div>
+  </div>
+</div>
+<div id="loadingView" class="modal">
+  <div id="loading-wrapper">
+    <div id="loading-text">LOADING</div>
+    <div id="loading-content"></div>
+  </div>
+</div>

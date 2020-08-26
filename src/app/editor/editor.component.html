@@ -1,0 +1,35 @@
+<div class="jss2" style="background-image: url(../../assets/image/preview-403821-nv1XHwHEgu0nD3WZ-large.jfif);">
+  <app-spadeGame></app-spadeGame>
+  <app-chat></app-chat>
+  <app-facebookshare></app-facebookshare>
+  <app-shareURl></app-shareURl>
+  <app-ads></app-ads>
+  <app-ads1></app-ads1>
+</div>
+<div id="myModal" class="modal">
+  <div id="loading-wrapper">
+    <div id="loading-text">Loading...</div>
+    <div id="loading-content"></div>
+  </div>
+</div>
+<div id="configmodal" >
+  <div class="boxs">
+    <h2>Configure Audio/Video</h2>
+    <br />
+    <p>Before the game begins, let's make sure your audio/video are configured correctly. The microphone should light up as you
+    talk. If it is not, please select a different input device.</p>
+    <h4>Audio Input:</h4>
+    <select name="" id="audioinput" class="select"></select>
+    <h4>Audio Output:</h4>
+    <select name="" id="audiooutput" class="select"></select>
+    <h4>Video Input:</h4>
+    <select name="" id="videoinput" class="select"></select>
+    <div [ngClass]="{'publishing': publishing}" #publisherDiv></div>
+    <div class="btn-create" (click) = "Done_configmoal()">Done</div>
+  </div>
+</div>
+<div id="waiting">
+  <div id="loading-wrapper">
+    <div class="waiting"></div>
+  </div>
+</div>

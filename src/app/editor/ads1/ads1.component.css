@@ -1,0 +1,11 @@
+.adventisment{
+  position: absolute;
+  top: 170px;
+  right: 0px;
+  background-color: grey;
+  height: 500px;
+  width: 300px;
+}
+
+span.info { position: absolute; z-index: 9; right: 0; cursor: pointer; }span.info:hover:before { content: "Ads by StarTuấn"; background: #CDCCCC; border-radius: 0 0 0 5px; padding: 0px 3px 0 10px; font-family: arial; width: 89px; position: absolute; right: 15px; font-size: 12px; top: 0; color: #222; }
+.st-ads:hover{filter: brightness(1.3);}

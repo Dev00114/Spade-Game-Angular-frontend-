@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+
+
+
+.shareheader{
+  position: fixed;
+  background-color: #00800075;
+  top: 82px;
+  height: 77px;
+  width: 35%;
+  border-radius: 35px;
+  display: flex;
+  text-shadow:0 1px 0 hsl(174,5%,80%),
+              0 2px 0 hsl(174,5%,75%),
+              0 2.3px 0 hsl(174,5%,70%),
+              0 2.5px 0 hsl(174,5%,66%),
+
+              0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+          0 10px 10px rgba(0,0,0,.2),
+          0 20px 20px rgba(0,0,0,.3);
+}
+
+#p1{
+  cursor: pointer;
+  padding: 25px 10px 10px 30px;
+  color: white;
+  text-shadow:0 1px 0 hsl(174,5%,80%),
+              0 2px 0 hsl(174,5%,75%),
+              0 2.3px 0 hsl(174,5%,70%),
+              0 2.5px 0 hsl(174,5%,66%),
+
+              0 0 5px rgba(0,0,0,.05),
+            0 1px 3px rgba(0,0,0,.2),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.2),
+          0 10px 10px rgba(0,0,0,.2),
+          0 20px 20px rgba(0,0,0,.3);
+}
+
+
+

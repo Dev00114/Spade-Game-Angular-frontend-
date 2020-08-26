@@ -1,0 +1,368 @@
+.jss2{
+  height: 1000px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+}
+
+.table{
+  background-color: #074e2c;
+  background-image: url(/assets/image/black-thread-light.png);
+  flex: 1 1;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  border-radius: 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jss21{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.tableContainer{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: black; /* Black w/ opacity */
+}
+
+#waiting{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: #211f1f2e; /* Black w/ opacity */
+}
+
+
+#loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#loading-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #999;
+  width: 100px;
+  height: 30px;
+  margin: -7px 0 0 -45px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+}
+
+#loading-content {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border: 3px solid #F00;
+}
+
+#loading-content:after {
+  content: "";
+  position: absolute;
+  border: 3px solid #0F0;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+}
+
+#loading-content:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #00F;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+
+#loading-content {
+  border: 3px solid transparent;
+  border-top-color: #4D658D;
+  border-bottom-color: #4D658D;
+  border-radius: 50%;
+  -webkit-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 2s linear infinite;
+}
+
+#loading-content:before {
+  border: 3px solid transparent;
+  border-top-color: #D4CC6A;
+  border-bottom-color: #D4CC6A;
+  border-radius: 50%;
+  -webkit-animation: loader 3s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 3s linear infinite;
+}
+
+#loading-content:after {
+  border: 3px solid transparent;
+  border-top-color: #84417C;
+  border-bottom-color: #84417C;
+  border-radius: 50%;
+  -webkit-animation: loader 1.5s linear infinite;
+  animation: loader 1.5s linear infinite;
+    -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+}
+
+@keyframes loaders {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+#content-wrapper {
+  color: #FFF;
+  position: fixed;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#header
+{
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  background-color: #666;
+}
+
+#content
+{
+  width: 800px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #888;
+}
+
+#configmodal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(92, 89, 89, 0.212); /* Black w/ opacity */
+}
+
+.boxs{
+    width: 700px;
+    height: 576px;
+    border: 30px solid #131313;
+    border-radius: 10px;
+    margin: 50px auto;
+    background: #131313;
+    color: white;
+}
+
+.select{
+  background-color: #131313;
+  height: 37px;
+  margin: 0 0 10px 0;
+  border-color: #131313;
+  border-bottom-color: white;
+}
+
+.btn-create{
+    float: right;
+    background: transparent;
+    border: 1px solid white;
+    width: 200px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition:300ms;
+}
+
+.btn-create span{
+    z-index: 93;
+    position: relative;
+}
+.btn-create:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:-105%;
+    transition:300ms;
+    background: rgba(255,255,255,0.52);
+    transform:skew(-30deg);
+}
+.btn-create:hover:before{
+    left: 105%;
+
+}
+.btn-create:hover{
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 360px) {
+  .table{
+      margin-left: 300px;
+      margin-right: 300px;
+
+  }
+}
+
+.playerone{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+
+}
+.playertwo{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  right: 120px;
+  top:400px;
+}
+.playerthree{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  bottom:0;
+
+}
+.playerfour{
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  left: 120px;
+  top:400px;
+}
+
+.timer{
+  position: absolute;
+  left: 50%;
+  top: 21px;
+  z-index: 1000;
+  color: white;
+  font-size: 38px;
+  display: none;
+}
+
+
+.waiting {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  font-size: 2rem;
+  position: relative;
+
+  &:after {
+    content: "Waiting.";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    animation: waiting 3s steps(3, end) infinite;
+  }
+}
+
+@keyframes waiting {
+  33% {
+    content: "Waiting..";
+  }
+  66% {
+    content: "Waiting...";
+  }
+}

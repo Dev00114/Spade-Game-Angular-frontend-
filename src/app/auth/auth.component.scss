@@ -1,0 +1,188 @@
+$color__sign-in-background: url(../../assets/image/preview-403821-nv1XHwHEgu0nD3WZ-large.jfif);
+$color__sign-in-text: #FFFFFF;
+
+$width__sign-in: 445px;
+
+.sign-in__modal{
+  background: $color__sign-in-background;
+  color: $color__sign-in-text;
+  padding-top: 190px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.5em;
+	min-height: 800px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  *{
+    box-sizing: inherit;
+  }
+}
+.sign-in__close{
+  position: absolute;
+  display: block;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  &:before, &:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: none;
+    border-left: 2px solid white;
+    transform-origin: 75% 50%;
+  }
+  &:before{
+    transform: rotate(-45deg);
+  }
+  &:after{
+    transform: rotate(45deg);
+  }
+}
+.sign-in__title{
+  margin-bottom: 20px;
+}
+.sign-in__or{
+  margin-top: 26px;
+}
+.sign-in__social-button{
+  color: $color__sign-in-text;
+  height: 60px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid $color__sign-in-text;
+  line-height: 60px;
+  width: 100%;
+  max-width: $width__sign-in;
+  margin-bottom: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.social-button__icon{
+  height: 1.5em;
+  width: 1.5em;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+.sign-in__form{
+  width: 100%;
+  margin: 0 auto;
+  max-width: $width__sign-in;
+  ::-webkit-input-placeholder {
+    color: $color__sign-in-text;
+  }
+
+  :-moz-placeholder {
+    color: $color__sign-in-text;
+  }
+
+  ::-moz-placeholder {
+    color: $color__sign-in-text;
+  }
+
+  :-ms-input-placeholder {
+    color: $color__sign-in-text;
+  }
+
+  ::-ms-input-placeholder {
+    color: $color__sign-in-text;
+  }
+
+  :placeholder-shown {
+    color: $color__sign-in-text;
+  }
+}
+.sign-in__input{
+  font-size: 1em;
+  background: none;
+  border: none;
+  color: $color__sign-in-text;
+  padding: 20px;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid $color__sign-in-text;
+  &:focus{
+    background: rgba(255,255,255, .2);
+  }
+}
+.sign-in__show-password{
+  width: 100%;
+  max-width: $width__sign-in;
+  margin: 40px auto;
+  text-align: right;
+}
+.sign-in__button{
+  width: 100%;
+  max-width: $width__sign-in;
+  background-color: #88cc854f;
+  border: none;
+  color: $color__sign-in-background;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  font-size: 1em;
+  &:active{
+    background: $color__sign-in-background;
+    color: $color__sign-in-text;
+    outline: none;
+    border: 1px solid $color__sign-in-text;
+  }
+}
+.sign-in__link{
+  color: $color__sign-in-text;
+  text-decoration: underline;
+}
+.sign-in__forgot-password{
+  width: 100%;
+  max-width: $width__sign-in;
+  text-align: right;
+  margin: 40px auto;
+}
+.show-password__checkbox + label{
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+  &:after{
+    content: '';
+    border: 1px solid white;
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.show-password__checkbox:checked + label{
+  &:before{
+    content: '';
+    height: .7em;
+    width: .25em;
+    display: block;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    position: absolute;
+    right: .4em;
+    top: .05em;
+    transform: rotate(45deg);
+  }
+}
+.show-password__checkbox{
+  display: none;
+}
+
+.jss2{
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: inherit;
+  flex-direction: column;
+}

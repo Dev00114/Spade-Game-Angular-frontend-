@@ -1,0 +1,98 @@
+<nav class="navbar">
+  <ul class="block-menu">
+    <li><a (click)="sideslide()" class="three-d">
+        <i class="fas fa-bars" style="color: white;"></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="fas fa-bars" style="color: white;"></i></span>
+          <span class="back"><i class="fas fa-bars" style="color: white;"></i></span>
+        </span>
+      </a></li>
+    <li>
+      <a class="three-d">
+        SPADE GAME
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">SPADE GAME</span>
+          <span class="back">SPADE GAME</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="pull-xs-right" *appShowAuthed="false">
+      <a class="three-d" routerLink="/login">
+        <i class="ion-person"></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="fas fa-sign-in-alt"></i></span>
+          <span class="back"><i class="ion-person"></i></span>
+        </span>
+      </a>
+    </li>
+
+    <li class="pull-xs-right" *appShowAuthed="false">
+      <a class="three-d" (click)="config_setting()">
+        <i class="ion-gear-a"></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="ion-gear-a"></i></span>
+          <span class="back"><i class="ion-gear-a"></i></span>
+        </span>
+      </a>
+    </li>
+
+    <li class="pull-xs-right" *appShowAuthed="false"><a class="three-d">
+        <i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i></span>
+          <span class="back"><i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i></span>
+        </span>
+      </a>
+    </li>
+
+    <li class="pull-xs-right" *appShowAuthed="false"><a class="three-d">
+        Help support us!
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front">Help support us!</span>
+          <span class="back">Help support us!</span>
+        </span>
+      </a>
+    </li>
+
+    <li class="pull-xs-right" *appShowAuthed="true" (click)="signOut()">
+      <a class="three-d">
+        ss
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front" id="currentuser"><i class="ion-person"></i></span>
+          <span class="back"><i class="fas fa-sign-out-alt"></i></span>
+        </span>
+      </a>
+    </li>
+
+
+    <li class="pull-xs-right nav-item" *appShowAuthed="true">
+      <a class="three-d">
+        <i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i></span>
+          <span class="back"><i class="ion-arrow-expand" id="data-toggle" data-toggle-fullscreen></i></span>
+        </span>
+      </a>
+    </li>
+
+
+    <li class="pull-xs-right nav-item" (click)="config_setting()" *appShowAuthed="true">
+      <a class="three-d" (click)="config_setting()">
+        <i class="ion-gear-a"></i>
+        <span aria-hidden="true" class="three-d-box">
+          <span class="front"><i class="ion-gear-a"></i></span>
+          <span class="back"><i class="ion-gear-a"></i></span>
+        </span>
+      </a>
+    </li>
+
+
+  </ul>
+  <div id="Sidenav" class="sidenav">
+    <p class="navText">Spade Game</p>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">
+      <i class="fas fa-angle-left"></i>
+    </a>
+  </div>
+</nav>
